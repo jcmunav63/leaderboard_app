@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1><b>Awesome Books ES6</b></h1>
+  <h1><b>Leaderboard App</b></h1>
 
 </div>
 
@@ -26,7 +26,7 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 About the Project <a name="about-project"></a>
 
-Awesome Books is a website designed to display a list of books and enable users to add and remove books.
+Leaderboard App is a website designed to display a gamers' scoreboard.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,6 +40,7 @@ The project is built using the following technologies and tools:
 - HTML
 - CSS
 - JAVASCRIPT
+- WEBPACK
 
 <!-- Key Features -->
 ### Key Features <a name="key-features"></a>
@@ -47,7 +48,8 @@ The project is built using the following technologies and tools:
 - **Good HTML, CSS & JS practices**
 - **A webpage with the use of linters**
 - **Dynamic behaviour using JavaScript**
-- **Data storage in the browser's local storage**
+- **Use of an API connection**
+- **Gitflow branch and pull request management**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +76,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository to your desired location:
 ```sh
-git clone git@github.com:jcmunav63/awesome-books-es6.git
+git clone git@github.com:jcmunav63/leaderboard_app.git
 ```
 
 2. Open the project folder in your code editor.
@@ -114,8 +116,8 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-The Awesome Books website will offer the following features:
-- **No future features for now**
+The Leaderoard app will offer the following features:
+- **Use of an API connection**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
