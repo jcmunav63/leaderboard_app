@@ -5,7 +5,7 @@ import './style.css';
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
+  element.innerHTML = _.join(['Hello', 'Webpack & Gitflow'], ' ');
   element.classList.add('hello');
 
   return element;
