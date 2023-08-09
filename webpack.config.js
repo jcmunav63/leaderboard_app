@@ -9,13 +9,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'To Do List',
+      title: 'Leaderboard App',
       template: './src/index.html',
     }),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].main.js',
+    // filename: 'main.js',
     clean: true,
   },
   optimization: {
