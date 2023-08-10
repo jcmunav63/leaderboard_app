@@ -1,0 +1,5 @@
+function getScores() {
+  
+}
+
+export { getScores };

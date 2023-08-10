@@ -1,0 +1,5 @@
+function addScore() {
+  
+}
+
+export { addScore };

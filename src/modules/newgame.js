@@ -1,8 +1,6 @@
 const gameId = JSON.parse(localStorage.getItem('game-id')) || '';
 
-// const name = {
-// 	"name": "My EZ game"
-// };
+const name = '{ name: "My EZ game" }';
 
 const uri = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
@@ -25,4 +23,49 @@ if(data) {
 
 }
 
+const createGame = async (url = '', data = {}) => {
+  const response = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer",
+    body: JSON.stringify(data),
+  });
+
+  return response.json();
+};
+
+const postGame = async (url = '', data = {}) => {
+  const response = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer",
+    body: JSON.stringify(data),
+  });
+  return response.json();
+};
+
+createGame('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games',
+ { name: 'EZ-Game' }).then((data) => {
+  console.log(data);
+ });
+
+ postGame('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', { name: 'EZ-Game' }).then((data) => {
+  console.log(data);
+});
+
+
 return gameId;
+
+export { createGame };

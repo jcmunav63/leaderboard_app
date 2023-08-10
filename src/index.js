@@ -1,6 +1,7 @@
 import './style.css';
-
 import { createNewGame } from './modules/newgame.js';
+import { getScores } from './modules/getscores.js';
+import { addScore } from './modules/addscore.js';
 
 const columns = document.getElementById('columns');
 
@@ -68,3 +69,9 @@ columns.appendChild(column1());
 columns.appendChild(column2());
 displayScores();
 createNewGame();
+
+const refreshButton = document.getElementById("btn-refresh");
+refreshButton.addEventListener("click", getScores(ID));
+
+const submitButton = document.getElementById("btn-submit");
+submitButton.addEventListener("click", addScore(ID));
