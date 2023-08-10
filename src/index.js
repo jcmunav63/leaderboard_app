@@ -1,5 +1,7 @@
 import './style.css';
 
+import { createNewGame } from './modules/newgame.js';
+
 const columns = document.getElementById('columns');
 
 function column1() {
@@ -65,3 +67,4 @@ function displayScores() {
 columns.appendChild(column1());
 columns.appendChild(column2());
 displayScores();
+createNewGame();

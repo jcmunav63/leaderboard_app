@@ -14,6 +14,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
   - [Usage](#usage)
   - [Run Tests](#run-tests)
   - [Deployment](#deployment)
@@ -81,6 +82,24 @@ git clone git@github.com:jcmunav63/leaderboard_app.git
 
 2. Open the project folder in your code editor.
 
+### Install <a name="install"></a>
+
+- Install this project with linters and Webpack bundler:
+
+```sh
+  cd to_do_list
+
+  npm init -y
+
+  npm install --save-dev hint@7.x
+
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+  install & configure Webpack bundler with npm, lodash, HTMLWebpack plugin and Webpack-dev-server
+```
+
 ## Usage
 
 To run the project locally, open the `index.html` file in your web browser. You can also use a live server extension in your code editor for a better development experience.
@@ -91,7 +110,7 @@ Tests for this project will be added in the future.
 
 ## Deployment
 
-To deploy the  Awesome Books Website to a live server, follow these steps:
+To deploy the Leaderboard App to a live server, follow these steps:
 
 1. Choose a hosting provider or platform for your website (e.g., GitHub Pages, Netlify, Heroku).
 
@@ -117,13 +136,13 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 
 ## 🔭 Future Features <a name="future-features"></a>
 The Leaderoard app will offer the following features:
-- **Use of an API connection**
+- **Include some tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jcmunav63/awesome-books-es6/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jcmunav63/leaderboard_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
