@@ -5,14 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaderboard - Setup</title>
   <base href="/" />
-  <link rel="stylesheet" type="text/css" href="./src/style.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 </head>
 <body>
   <main id="container">
     <h1>Leaderboard</h1>
-    <div id="columns"></div>
+    <div id="columns">
+      <div class="column1">
+        <div id="left">
+          <span class="subtitle">Recent scores</span>
+          <button id="btn-refresh" class="btn" type="button">Refresh</button>
+        </div>
+        <div id="scores"></div>
+      </div>
+      <div class="column2">
+        <div id="right">
+          <span class="subtitle2">Add your score</span><br>
+          <label for="input-name" class="hidden">Player</label>
+          <input id="input-name" type:"text" placeholder="Your name" pattern="[A-Za-z0-9]+" required><br>
+          <label for="input-score" class="hidden">Score</label>
+          <input id="input-score" type:"text" placeholder="Your score" required oninput="this.value=this.
+          value.replace(/[^0-9]/g, '')"><br>
+          <span class="div">
+            <button id="btn-submit" class="btn" type="button">Submit</button>
+          </span>
+        </div>
+      </div>
+    </div>
   </main>
-  <script src="main.js".js"></script>
+  <!-- <script src="main.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </body>
 </html>
