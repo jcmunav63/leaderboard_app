@@ -1,4 +1,4 @@
-async function getScore(gameId) {
+export default async function getScore(gameId) {
   const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`;
   try {
     const response = await fetch(url, {
@@ -13,12 +13,9 @@ async function getScore(gameId) {
       referrerPolicy: 'no-referrer',
     });
     const scores = await response.json();
-    // console.log(scores);
     return scores;
   } catch (error) {
     console.error('Error fetching scores:', error);
     return [];
   }
 }
-
-export default { getScore };

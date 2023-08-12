@@ -1,7 +1,7 @@
 import './style.css';
-// import { newGame } from './modules/newgame.js';
-import getScore from './modules/getscores.js';
+import getScore from './modules/getscore.js';
 import addScore from './modules/addscore.js';
+import newGame from './modules/newgame.js';
 
 function displayScores(scores) {
   const displayedScores = document.getElementById('scores');
@@ -26,6 +26,7 @@ function displayScores(scores) {
 
 window.onload = async () => {
   const gameId = '7fUS4KxBVPBVygC5G6pP';
+  newGame(gameId);
   const scores = await getScore(gameId);
   displayScores(scores);
 };
@@ -34,24 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const refreshButton = document.getElementById('btn-refresh');
   refreshButton.addEventListener('click', async (event) => {
     event.preventDefault();
-    // console.log(scores);
     const gameId = '7fUS4KxBVPBVygC5G6pP';
     const scores = await getScore(gameId);
-    console.log(scores);
     displayScores(scores);
-    // await getScore(gameId).then(scores => {
-
-    // })
-    // .catch(error => {
-    //   console.error("Error:", error);
-    // });
   });
 
   const submitButton = document.getElementById('btn-submit');
-  // console.log(submitButton);
   submitButton.addEventListener('click', async (event) => {
     event.preventDefault();
     const gameId = '7fUS4KxBVPBVygC5G6pP';
     await addScore(gameId);
+    window.location.reload();
   });
 });

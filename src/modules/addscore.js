@@ -1,10 +1,8 @@
-async function addScore(gameId) {
+export default async function addScore(gameId) {
   const playerNameInput = document.getElementById('input-name');
   const playerScoreInput = document.getElementById('input-score');
   const playerName = playerNameInput.value;
   const playerScore = parseInt(playerScoreInput.value, 10);
-  console.log(playerScore);
-  console.log(playerName);
 
   if (playerName && playerScore) {
     const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`;
@@ -33,5 +31,3 @@ async function addScore(gameId) {
     console.log('Please enter a player name and score.');
   }
 }
-
-export default { addScore };

@@ -60,6 +60,8 @@ h1 {
 #scores {
   border: solid 2px;
   border-radius: 3px;
+  max-height: 60vh;
+  overflow-y: scroll;
 }
 
 .row {
