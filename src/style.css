@@ -3,6 +3,11 @@
   padding: 0;
   border: 0;
   font-family: 'Comic Neue', cursive;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
 }
 
 h1 {
@@ -20,12 +25,18 @@ h1 {
   width: 40%;
   margin-left: 6%;
   margin-right: 4%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
 }
 
 .column2 {
   width: 30%;
   margin-left: 5%;
   margin-right: 15%;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 15px;
 }
 
 .btn {
@@ -60,7 +71,7 @@ h1 {
 #scores {
   border: solid 2px;
   border-radius: 3px;
-  max-height: 60vh;
+  max-height: 40vh;
   overflow-y: scroll;
 }
 
