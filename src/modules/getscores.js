@@ -2,22 +2,23 @@ async function getScore(gameId) {
   const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`;
   try {
     const response = await fetch(url, {
-      method: "GET",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-      redirect: "follow",
-      referrerPolicy: "no-referrer",
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
     });
     const scores = await response.json();
+    // console.log(scores);
     return scores;
   } catch (error) {
-    console.error("Error fetching scores:", error);
+    console.error('Error fetching scores:', error);
     return [];
   }
 }
 
-export { getScore };
+export default { getScore };
